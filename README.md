@@ -21,14 +21,14 @@ The point cloud provided is a downsampled version of the point clouds that Hivem
 - Somewhere in San Francisco.
 - In the [ECEF](https://en.wikipedia.org/wiki/ECEF) coordinate system.
 - Measured in meters ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System#A_new_World_Geodetic_System:_WGS_84))
-- ASCII version so you can see what the coordinates look like.
+- [ASCII](https://github.com/Hivemapper/ui-engineer-coding-challenge/blob/master/point-cloud-ascii.ply) version so you can see what the coordinates look like.
 
 `App.jsx` already does the work of loading and parsing the PLY file into a THREE.Geometry.
 
 Feel free to download the PLY file and open it in a viewer like [MeshLab](http://www.meshlab.net/) or [CloudCompare](http://www.danielgm.net/cc/) to see what it looks like.
 
 ### Task 1: Render the point cloud
-With the THREE.Geometry as a starting point, render this to the screen. There's no right answer here.
+With the `THREE.Geometry` loaded by `App.jsx` as a starting point, render this to the screen. There's no right answer here.
 
 Note:
 
