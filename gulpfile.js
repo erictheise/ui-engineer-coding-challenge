@@ -5,7 +5,7 @@ var babelify = require('babelify');
 
 gulp.task('browserify', function() {
   var bundler = browserify({
-    entries: ['./main.js'], // Only need initial file, browserify finds the deps
+    entries: ['./src/main.js'], // Only need initial file, browserify finds the deps
     debug: true, // Gives us sourcemapping
     cache: {}, packageCache: {}, fullPaths: true // Requirement of watchify
   });
@@ -13,7 +13,7 @@ gulp.task('browserify', function() {
   bundler.transform(babelify, {presets: ["es2015", "react"]});
 
   return bundler.bundle() // Create the initial bundle when starting the task
-  .pipe(source('main.js'))
+  .pipe(source('./src/main.js'))
   .pipe(gulp.dest('./build/'));
 });
 
