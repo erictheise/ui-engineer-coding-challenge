@@ -13,7 +13,7 @@ gulp.task('browserify', function() {
   bundler.transform(babelify, {presets: ["es2015", "react"]});
 
   return bundler.bundle() // Create the initial bundle when starting the task
-  .pipe(source('./src/main.js'))
+  .pipe(source('./main.js'))
   .pipe(gulp.dest('./build/'));
 });
 
