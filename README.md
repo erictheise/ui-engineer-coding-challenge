@@ -21,7 +21,7 @@ The point cloud provided is a downsampled version of the point clouds that Hivem
 - Somewhere in San Francisco.
 - In the [ECEF](https://en.wikipedia.org/wiki/ECEF) coordinate system.
 - Measured in meters ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System#A_new_World_Geodetic_System:_WGS_84))
-- [ASCII](https://github.com/Hivemapper/ui-engineer-coding-challenge/blob/master/point-cloud-ascii.ply) version so you can see what the coordinates look like.
+- [ASCII](https://github.com/Hivemapper/ui-engineer-coding-challenge/blob/master/Point%20Clouds/point-cloud-ascii.ply) version so you can see what the coordinates look like.
 
 `App.jsx` already does the work of loading and parsing the PLY file into a THREE.Geometry.
 
