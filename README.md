@@ -7,7 +7,7 @@ This challenge shouldn't take more than 4 hours to finish. Task 2 is signifigant
 Please document your code as you would in a production system. Please also include a short `README` explaining how you approached the problem, and things you might improve on given more time.
 
 ### How to run
-Download this repo. If you are going to clone it, do so privately so that nobody else can your answer.
+Download this repo. If you are going to clone it, do so privately so that nobody else can see your answer.
 
 ```shell
 npm install
