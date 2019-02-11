@@ -42,6 +42,3 @@ Note:
 `App.jsx` comes with two buttons at the top to switch between color modes. For 'Color By Altitude' please color each point based on it's relative height above sea level. In the model provided the minimum altitude is 6.65 meters and the maximum is 58.57 meters.
 
 `geo-utils.js` is your friend here.
-
-### Submitting
-Please email a zip of this repository, along with any build instructions, to dane@hivemapper.com
