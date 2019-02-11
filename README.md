@@ -1,4 +1,4 @@
-# Hivemapper UI Engineer Coding Challenge
+# Hivemapper Web Graphics Engineer Coding Challenge
 
 This coding challenge is designed to test your 3D graphics ability. If you have not worked with OpenGL and/or Three.js before, this challenge will be painful. We have set up a basic application structure as a starting point, but feel free to implement this however you see fit.
 
