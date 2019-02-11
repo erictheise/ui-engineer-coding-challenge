@@ -13,7 +13,6 @@ const buttonStyle = {
 };
 
 export default class App extends React.Component {
-
   componentDidMount() {
     this.loadModel();
   }
@@ -43,11 +42,10 @@ export default class App extends React.Component {
     const loader = new PLYLoader();
     loader.load(
       'https://s3.amazonaws.com/web-ui-engineering-challenge/point-cloud.ply',
-      ( geometry ) =>
-    {
-      // geometry here is an instance of THREE.Geometry
-      console.log('loaded geometry');
-    });
+      (geometry) => {
+        // geometry here is an instance of THREE.Geometry
+        console.log('loaded geometry', geometry);
+      }
+    );
   }
-
 }
