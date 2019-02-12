@@ -1,4 +1,4 @@
-# Hivemapper UI Engineer Coding Challenge
+# Hivemapper Web Graphics Engineer Coding Challenge
 
 This coding challenge is designed to test your 3D graphics ability. If you have not worked with OpenGL and/or Three.js before, this challenge will be painful. We have set up a basic application structure as a starting point, but feel free to implement this however you see fit.
 
@@ -23,7 +23,8 @@ The point cloud provided is a downsampled version of the point clouds that Hivem
 - Somewhere in San Francisco.
 - In the [ECEF](https://en.wikipedia.org/wiki/ECEF) coordinate system.
 - Measured in meters ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System#A_new_World_Geodetic_System:_WGS_84))
-- [ASCII](https://github.com/Hivemapper/ui-engineer-coding-challenge/blob/master/Point%20Clouds/point-cloud-ascii.ply) version so you can see what the coordinates look like.
+
+Here is an [ASCII](https://github.com/Hivemapper/ui-engineer-coding-challenge/blob/master/Point%20Clouds/point-cloud-ascii.ply) version so you can see what the coordinates look like.
 
 `App.jsx` already does the work of loading and parsing the PLY file into a THREE.Geometry.
 
@@ -35,13 +36,10 @@ With the `THREE.Geometry` loaded by `App.jsx` as a starting point, render this t
 Note:
 
 - The ECEF coordinate system doesn't align nicely with any of the scene's axes so the model will look slanted. Can you compensate for this so that the scene looks upright?
-- WebGL doesn't work well large ECEF coordinates (Javascript does), so you will see floating point imprecision in the scene. Can you correct for this?
+- You will see floating point imprecision in the scene. Can you correct for this? WebGL doesn't work well with typical ECEF coordinates because graphics hardware tends to only use up to 32-bit floats which has low precision at that magnitude, while JavaScript uses 64-bit floats for all of its numbers and does not have that problem at that magnitude.
 - We've included Three.js in the starting code. Feel free to not use Three.js if there's something else you are more comfrotable with.
 
 ## Task 2: Color the point cloud based on altitude
 `App.jsx` comes with two buttons at the top to switch between color modes. For 'Color By Altitude' please color each point based on it's relative height above sea level. In the model provided the minimum altitude is 6.65 meters and the maximum is 58.57 meters.
 
 `geo-utils.js` is your friend here.
-
-### Submitting
-Please email a zip of this repository, along with any build instructions, to dane@hivemapper.com
