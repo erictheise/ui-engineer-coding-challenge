@@ -37,7 +37,7 @@ Note:
 
 - The ECEF coordinate system doesn't align nicely with any of the scene's axes so the model will look slanted. Can you compensate for this so that the scene looks upright?
 - You will see floating point imprecision in the scene. Can you correct for this? WebGL doesn't work well with typical ECEF coordinates because graphics hardware tends to only use up to 32-bit floats which has low precision at that magnitude, while JavaScript uses 64-bit floats for all of its numbers and does not have that problem at that magnitude.
-- We've included Three.js in the starting code. Feel free to not use Three.js if there's something else you are more comfrotable with.
+- We've included Three.js in the starting code. Feel free to not use Three.js if there's something else you are more comfortable with.
 
 ## Task 2: Color the point cloud based on altitude
 `App.jsx` comes with two buttons at the top to switch between color modes. For 'Color By Altitude' please color each point based on it's relative height above sea level. In the model provided the minimum altitude is 6.65 meters and the maximum is 58.57 meters.
